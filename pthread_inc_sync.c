@@ -1,3 +1,5 @@
+//asdfasdf
+
 /*
  * pthread_inc.c
  * compile this file by:
@@ -32,7 +34,7 @@ void * thread_func(void * _arg) {
     l++;
     arg->c[0]++;
   }
-  
+
   while (!__sync_bool_compare_and_swap(&lock, 0, 1)) {} // barrier
   for (i = 0; i < n_inc; i++) {
     g++;
